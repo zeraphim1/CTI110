@@ -83,9 +83,9 @@ print()
 
 print('--------This is your monthly savings and investing reality based off your income--------\n')
 
-living_expenses_reality = final_total_expenses * 8
+living_expenses_reality = final_total_expenses * .8
 investing_reality = final_total_expenses * .15
-savings_reality = final_total_expenses * 2
+savings_reality = final_total_expenses * .05
 
 print('living expense:', final_total_expenses)
 print('Investing:', investing_reality)
