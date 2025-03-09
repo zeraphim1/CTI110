@@ -2,7 +2,7 @@
 # 03/9/25
 # P2LAB1
 
-print('This project calulates diffrent values for a circle!')
+print('This project calculates diffrent values of a circle!')
 
 # I probaly dont even need to be importing math becasue I specified PI, but it can't hurt
 
