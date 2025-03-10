@@ -18,20 +18,20 @@ while True:
     else:
         print('Invalid answer entered, please enter \"male\" or \"female\"')
    
-age = float(input('\nWhat is your age? '))
+Age = float(input('\nWhat is your age? '))
 
-weight = float(input('\nWhat is your weight in pounds? '))
+Weight = float(input('\nWhat is your weight in pounds? '))
 
 Heart_bpm = float(input('\nWhat is your average heart rate during your workout? '))
 
 Workout_length = float(input('\nHow long was your workout in minutes? '))
 
 if gender == "male":
-    calories_man = ( (age * 0.2017) + (weight * 0.09036) + (Heart_bpm * 0.6309) - 55.0969) * Workout_length / 4.184
+    calories_man = ( (Age * 0.2017) + (Weight * 0.09036) + (Heart_bpm * 0.6309) - 55.0969) * Workout_length / 4.184
     print(f'\nYou burned {calories_man:.2f} calories in your workout!')
 
 elif gender == "female":
-    calories_female = ( (age * 0.074) - (weight * 0.05741) + (Heart_bpm * 0.4472) - 20.4022) * Workout_length / 4.184
+    calories_female = ( (Age * 0.074) - (Weight * 0.05741) + (Heart_bpm * 0.4472) - 20.4022) * Workout_length / 4.184
     print(f'\nYou burned {calories_female:.2f} calories in your workout!')
 
 input("\nPress Enter to exit...")
