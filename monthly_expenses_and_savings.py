@@ -60,24 +60,21 @@ final_expense = house_additional + house_expense + house_insurance + utilities_e
 
 print('--------This is your monthly expenses broken down--------\n')
 
-print('Monthly Income:', monthly_income)
+print(f'Monthly Income: ${monthly_income:.2f}')
 
 
-print('Housing:', house_total)
-print('Car:', car_total)
-print('Food:', food_total)
-print('Other/Miscellaneous:', other_expense)
-print()
+print(f'Housing: ${house_total:.2f}')
+print(f'Car: ${car_total:.2f}')
+print(f'Food: ${food_total:.2f}')
+print(f'Other/Miscellaneous: ${other_expense:.2f}\n')
 
 
-print('Total Expenses:', final_expense)
-print()
+
+print(f'Total Expenses: ${final_expense:.2f}\n')
 
 final_total_expenses = monthly_income - final_expense
 
-print('Monthly net gain/loss:', final_total_expenses)
-print()
-
+print(f'Monthly net gain/loss: ${final_total_expenses:.2f}\n')
 
 #savings and investing reality
 
@@ -86,6 +83,8 @@ print('--------This is your monthly savings and investing reality based off your
 living_expenses_reality = final_total_expenses * .8
 investing_reality = final_total_expenses * .15
 savings_reality = final_total_expenses * .05
+ 
+ # hello
 
 print('living expense:', final_total_expenses)
 print('Investing:', investing_reality)
