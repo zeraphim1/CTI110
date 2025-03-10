@@ -9,40 +9,36 @@ print('If there is an expense you do not have just type 0(zero) and hit enter\n'
 # main body of inputs
 
 monthly_income = float(input('What is your monthly income? '))
-print()
 
-house_insurance = float(input('What is your monthly renters/housing insurance? '))
-print()
+house_insurance = float(input('\nWhat is your monthly renters/housing insurance? '))
 
-house_expense = float(input('What is your monthly rent/mortgage? '))
-print()
+house_expense = float(input('\nWhat is your monthly rent/mortgage? '))
 
-utilities_expense = float(input('What is your monthly utility bill? '))
-print()
+utilities_expense = float(input('\nWhat is your monthly utility bill? '))
 
-house_additional = float(input('What are your other monthly housing expenses? '))
-print()
 
-car_payment = float(input('What is your monthly car payment? '))
-print()
+house_additional = float(input('\nWhat are your other monthly housing expenses? '))
 
-car_insurance = float(input('What is your monthly car insurance bill? '))
-print()
 
-car_gas = float(input('What is a rough estimate of your monthly gas expense? '))
-print()
+car_payment = float(input('\nWhat is your monthly car payment? '))
 
-car_additional = float(input('What are your other monthly car expenses? '))
-print()
+car_insurance = float(input('\nWhat is your monthly car insurance bill? '))
 
-grocieries_expense = float(input('What is monthly grocery cost? '))
-print()
 
-eating_out = float(input('Roughly how much to you spend on eating out monthly? '))
-print()
+car_gas = float(input('\nWhat is a rough estimate of your monthly gas expense? '))
 
-other_expense = float(input('What are your other/miscellaneous expenses? '))
-print()
+
+car_additional = float(input('\nWhat are your other monthly car expenses? '))
+
+
+grocieries_expense = float(input('\nWhat is monthly grocery cost? '))
+
+
+eating_out = float(input('\nRoughly how much to you spend on eating out monthly? '))
+
+
+other_expense = float(input('\nWhat are your other/miscellaneous expenses? '))
+
 
 # final total by category
 
@@ -58,7 +54,7 @@ final_expense = house_total + car_total + food_total + other_expense
 
 #expenses and stuff broken down
 
-print('--------This is your monthly expenses broken down--------\n')
+print('\n--------This is your monthly expenses broken down--------\n')
 
 print(f'Monthly Income: ${monthly_income:.2f}')
 
