@@ -98,3 +98,4 @@ print(f'living expenses: ${living_expenses_recommend:.2f}')
 print(f'investing: ${investing_recommend:.2f}')
 print(f'Emergency Fund: ${savings_recommend:.2f}')
 
+input('Press Enter to exit...')
