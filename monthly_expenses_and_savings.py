@@ -3,8 +3,8 @@
 
 print('This program is designed to calculate your monthly expenses and savings!\n')
 
-print('If there is an expense you do not have just type 0(zero) and hit enter')
-print()
+print('If there is an expense you do not have just type 0(zero) and hit enter\n')
+
 
 # main body of inputs
 
@@ -54,7 +54,7 @@ food_total = grocieries_expense + eating_out
 
 # final expense
 
-final_expense = house_additional + house_expense + house_insurance + utilities_expense + car_additional + car_gas + car_insurance + car_payment + grocieries_expense + eating_out + other_expense
+final_expense = house_total + car_total + food_total + other_expense
 
 #expenses and stuff broken down
 
@@ -86,10 +86,9 @@ savings_reality = final_total_expenses * .05
  
  # hello
 
-print('living expense:', final_total_expenses)
-print('Investing:', investing_reality)
-print('Emergency Fund:', savings_reality)
-print()
+print(f'living expense: ${final_total_expenses:.2f}')
+print(f'Investing: ${investing_reality:.2f}')
+print(f'Emergency Fund: ${savings_reality:.2f}\n')
 
 #savings and investing section recommendation
 
@@ -99,7 +98,7 @@ living_expenses_recommend = monthly_income * .8
 investing_recommend = monthly_income * .15
 savings_recommend = monthly_income * .05
 
-print('living expenses:', living_expenses_recommend)
-print('investing:', investing_recommend)
-print('Emergency Fund', savings_recommend)
+print(f'living expenses: ${living_expenses_recommend:.2f}')
+print(f'investing: ${investing_recommend:.2f}')
+print(f'Emergency Fund: ${savings_recommend:.2f}')
 
